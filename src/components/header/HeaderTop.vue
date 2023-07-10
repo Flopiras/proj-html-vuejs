@@ -1,25 +1,42 @@
+<script>
+</script>
+
 <template>
     <div class="top-header">
-        <div class="containier d-flex justify-content-between">
+        <div class="containier d-flex justify-content-between pt-3">
             <!-- indirizzi -->
             <div class="address">
                 <ul>
                     <li>
+                        <FontAwesomeIcon icon="location-dot" class="me-1" />
                         <h6>North baukhlula,tala, USA</h6>
                     </li>
                     <li>
+                        <FontAwesomeIcon icon="envelope" class="me-1" />
+
                         <h6>demo@example.com</h6>
                     </li>
 
                 </ul>
             </div>
-            <div>
+            <div class="d-flex align-items-center">
                 <div class="hours">
                     <p>8.30AM-8.30PM</p>
                 </div>
                 <div class="social">
                     <ul>
-                        <li></li>
+                        <li>
+                            <FontAwesomeIcon icon="fa-brands fa-facebook-f" class=" me-1" />
+                        </li>
+                        <li>
+                            <FontAwesomeIcon icon="fa-brands fa-twitter" class="me-1" />
+                        </li>
+                        <li>
+                            <FontAwesomeIcon icon="fa-brands fa-instagram" class="me-1" />
+                        </li>
+                        <li>
+                            <FontAwesomeIcon icon="fa-brands fa-pinterest-p" class="me-1" />
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -46,6 +63,8 @@ ul {
     display: flex;
 
     li {
+
+        display: flex;
         margin-right: 1rem;
     }
 }
