@@ -2,15 +2,14 @@
 export default {
     props: {
         placeholder: String
-    }
+    },
 }
 </script>
 
 <template>
     <div class="dropdown">
-        <button class="btn btn-link dropdown-toggle" type="button" data-bs-toggle="dropdown">
-            {{ placeholder }}
-        </button>
+        <button class="btn btn-link dropdown-toggle">{{ placeholder }}</button>
+
         <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="#">Action</a></li>
             <li><a class="dropdown-item" href="#">Another action</a></li>

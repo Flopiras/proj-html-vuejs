@@ -9,7 +9,7 @@ export default {
 
 <template>
     <div id="header-main">
-        <div class="container">
+        <div class="container d-flex align-items-center">
             <img src="../../assets/img/logo.png" alt="logo">
 
             <BaseDropdown v-for="option in options" :key="option" :placeholder="option" />
