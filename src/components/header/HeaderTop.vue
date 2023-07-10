@@ -3,7 +3,7 @@
 
 <template>
     <div class="top-header">
-        <div class="containier d-flex justify-content-between pt-3">
+        <div class="container d-flex justify-content-between pt-3">
             <!-- indirizzi -->
             <div class="address">
                 <ul>
