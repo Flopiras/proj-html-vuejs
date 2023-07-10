@@ -3,7 +3,8 @@ import HeaderTop from './header/HeaderTop.vue';
 import HeaderMain from './header/HeaderMain.vue';
 
 export default {
-    components: { HeaderTop, HeaderMain }
+    components: { HeaderTop, HeaderMain },
+    props: { options: Array }
 }
 </script>
 
@@ -11,6 +12,6 @@ export default {
     <header>
         <HeaderTop />
 
-        <HeaderMain />
+        <HeaderMain :options="options" />
     </header>
 </template>
