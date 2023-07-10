@@ -1,5 +1,5 @@
 <script>
-import HeaderTop from './header/_HeaderTop.vue';
+import HeaderTop from './header/HeaderTop.vue';
 
 export default {
     components: { HeaderTop }
