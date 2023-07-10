@@ -1,8 +1,9 @@
 <script>
 import BaseDropdown from '../BaseDropdown.vue';
+import BaseButton from '../BaseButton.vue';
 
 export default {
-    components: { BaseDropdown },
+    components: { BaseDropdown, BaseButton },
     props: { options: Array }
 }
 </script>
@@ -29,6 +30,10 @@ export default {
                     <div class="items-number round">0</div>
                 </div>
 
+                <!-- button -->
+                <BaseButton>
+                    ORDER NOW
+                </BaseButton>
             </div>
         </div>
     </div>
@@ -40,6 +45,7 @@ export default {
 .search {
     width: 2.2rem;
     height: 2.2rem;
+    cursor: pointer;
 }
 
 .round {
@@ -53,6 +59,7 @@ export default {
 
 #cart {
     position: relative;
+    cursor: pointer;
 }
 
 .fa-cart-shopping {
