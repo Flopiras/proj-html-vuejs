@@ -1,4 +1,12 @@
-<script></script>
+<script>
+export default {
+    name: 'GogrinApp',
+    data() {
+        return {}
+    }
+}
+
+</script>
 
 <template>
     <header></header>
