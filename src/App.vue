@@ -1,6 +1,10 @@
 <script>
+import AppHeader from './components/AppHeader.vue';
+import AppMain from './components/AppMain.vue';
+import AppFooter from './components/AppFooter.vue';
 export default {
     name: 'GogrinApp',
+    components: { AppHeader, AppMain, AppFooter },
     data() {
         return {}
     }
@@ -9,7 +13,9 @@ export default {
 </script>
 
 <template>
-    <header></header>
+    <AppHeader />
+    <AppMain />
+    <AppFooter />
 </template>
 
 <style lang="scss">
