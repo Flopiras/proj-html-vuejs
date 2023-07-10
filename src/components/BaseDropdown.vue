@@ -29,3 +29,10 @@ export default {
         </ul>
     </div>
 </template>
+
+<style scoped>
+button {
+    text-decoration: none;
+    color: currentColor;
+}
+</style>
