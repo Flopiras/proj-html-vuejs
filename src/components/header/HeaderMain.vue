@@ -20,11 +20,14 @@ export default {
             <!-- right part -->
             <div class="d-flex align-items-center">
                 <!-- search -->
-                <div class="search round my-round">
+                <div class="search round">
                     <FontAwesomeIcon icon="fa-magnifying-glass" class="me-1" />
                 </div>
                 <!-- cart -->
-                <FontAwesomeIcon icon="fa-cart-shopping" class="me-1" />
+                <div id="cart">
+                    <FontAwesomeIcon icon="fa-cart-shopping" class="me-1 fs-3" />
+                    <div class="items-number round">0</div>
+                </div>
 
             </div>
         </div>
@@ -48,8 +51,22 @@ export default {
     align-items: center;
 }
 
+#cart {
+    position: relative;
+}
+
 .fa-cart-shopping {
     font-size: 1.2rem;
     margin: 0 1rem;
+    color: $main-color;
+}
+
+.items-number {
+    width: 1.2rem;
+    height: 1.2rem;
+    font-size: 0.8rem;
+    position: absolute;
+    right: -5px;
+    top: -5px;
 }
 </style>
