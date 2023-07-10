@@ -31,9 +31,7 @@ export default {
                 </div>
 
                 <!-- button -->
-                <BaseButton>
-                    ORDER NOW
-                </BaseButton>
+                <BaseButton :placeholder="'ORDER NOW'" />
             </div>
         </div>
     </div>
