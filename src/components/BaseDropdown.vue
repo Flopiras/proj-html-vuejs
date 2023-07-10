@@ -1,16 +1,26 @@
 <script>
 export default {
+    data() {
+        return {
+            isClicked: false
+        }
+    },
     props: {
         placeholder: String
     },
+    methods: {
+        toggleMenu() {
+            this.isClicked = !this.isClicked;
+        }
+    }
 }
 </script>
 
 <template>
     <div class="dropdown">
-        <button class="btn btn-link dropdown-toggle">{{ placeholder }}</button>
+        <button @click="toggleMenu" class="btn btn-link dropdown-toggle">{{ placeholder }}</button>
 
-        <ul class="dropdown-menu">
+        <ul :class="{ show: isClicked }" class="dropdown-menu">
             <li><a class="dropdown-item" href="#">HOME-1</a></li>
             <li><a class="dropdown-item" href="#">HOME-2</a></li>
             <li><a class="dropdown-item" href="#">HOME-3</a></li>
