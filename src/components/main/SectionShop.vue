@@ -1,3 +1,11 @@
+<script>
+import BaseCard from '../BaseCard.vue';
+
+export default {
+    components: { BaseCard }
+}
+</script>
+
 <template>
     <section id="shop">
         <div class="container text-center text-white">
@@ -12,6 +20,13 @@
                 <li><button class="btn btn-link">Orange</button></li>
                 <li><button class="btn btn-link">Vegetable</button></li>
             </ul>
+
+            <!-- foods grid -->
+            <div class="row row-cols-4">
+                <div class="col">
+                    <BaseCard />
+                </div>
+            </div>
         </div>
     </section>
 </template>
