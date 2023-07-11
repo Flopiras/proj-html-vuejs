@@ -25,7 +25,8 @@ const foods = [
         'pic': 's5-150x150.jpg',
         'discount': false,
         'price': null,
-        'lastPrice': '$18'
+        'lastPrice': '$18',
+        'trend': true
     },
     {
         'id': 2,
@@ -33,7 +34,8 @@ const foods = [
         'pic': 's2-150x150.jpg',
         'discount': true,
         'price': '$18',
-        'lastPrice': '$17'
+        'lastPrice': '$17',
+        'trend': true
     },
     {
         'id': 3,
@@ -41,7 +43,8 @@ const foods = [
         'pic': 's8-150x150.jpg',
         'discount': false,
         'price': null,
-        'lastPrice': '$15'
+        'lastPrice': '$15',
+        'trend': true
     },
     {
         'id': 4,
@@ -49,7 +52,8 @@ const foods = [
         'pic': 's1-150x150.jpg',
         'discount': true,
         'price': '$20',
-        'lastPrice': '$15'
+        'lastPrice': '$15',
+        'trend': true
     },
     {
         'id': 5,
@@ -57,6 +61,7 @@ const foods = [
         'pic': 's4-150x150.jpg',
         'discount': true,
         'price': '$19',
+        'trend': false,
         'lastPrice': '$14'
     },
     {
@@ -65,6 +70,7 @@ const foods = [
         'pic': 's10-150x150.jpg',
         'price': null,
         'discount': false,
+        'trend': false,
         'lastPrice': '$23'
     },
     {
@@ -73,6 +79,7 @@ const foods = [
         'pic': 's9-150x150.jpg',
         'discount': true,
         'price': '$29',
+        'trend': false,
         'lastPrice': '$26'
     },
     {
@@ -81,10 +88,11 @@ const foods = [
         'pic': 's7-150x150.jpg',
         'price': null,
         'discount': false,
+        'trend': false,
         'lastPrice': '$21'
     }
 ]
 
-const trends = foods.splice(3,4)
+const trends = foods.map(trend => {return (trend ? true : false)})
 
 export{navbarOptions, products, foods, trends};
