@@ -19,6 +19,7 @@ button {
     margin: 0 1rem;
     border-radius: 0 20px 0 20px;
     color: white;
+    padding: 1rem 3.5rem;
 }
 
 .btn-main {
