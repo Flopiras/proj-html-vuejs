@@ -22,7 +22,7 @@ export default {
                     <div class="col8">
                         <div class="container-fluid">
                             <div class="row row-cols-4">
-                                <div v-for="trend in trends" :key="trend.id" class="col">
+                                <div v-for="trend in trends" :key="trend.id" class="trend col">
                                     <BaseCard :pic="trend.pic" :picName="trend.name" :mainCaption="trend.name"
                                         :saleTag="trend.discount" />
                                 </div>
