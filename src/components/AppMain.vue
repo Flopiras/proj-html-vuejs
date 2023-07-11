@@ -7,7 +7,7 @@ import SectionOffers from './main/SectionOffers.vue';
 import SectionTrending from './main/SectionTrending.vue';
 export default {
     components: { SectionMission, SectionShop, SectionQuote, SectionOffers, SectionNumbers, SectionTrending },
-    props: { sectionProducts: Array, shopProducts: Array }
+    props: { sectionProducts: Array, shopProducts: Array, trendItems: Array }
 }
 </script>
 
@@ -24,6 +24,6 @@ export default {
         <!-- numbers -->
         <SectionNumbers />
         <!-- trending -->
-        <SectionTrending />
+        <SectionTrending :trends="trendItems" />
     </main>
 </template>
