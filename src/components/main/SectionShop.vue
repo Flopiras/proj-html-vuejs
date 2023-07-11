@@ -2,7 +2,10 @@
 import BaseCard from '../BaseCard.vue';
 
 export default {
-    components: { BaseCard }
+    components: { BaseCard },
+    props: {
+        foods: Array
+    }
 }
 </script>
 

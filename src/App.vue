@@ -1,5 +1,5 @@
 <script>
-import { navbarOptions, products } from './data';
+import { navbarOptions, products, foods } from './data';
 
 import AppHeader from './components/AppHeader.vue';
 import AppMain from './components/AppMain.vue';
@@ -10,7 +10,8 @@ export default {
     data() {
         return {
             navbarOptions,
-            products
+            products,
+            foods
         }
     }
 }
@@ -19,7 +20,7 @@ export default {
 
 <template>
     <AppHeader :options="navbarOptions" />
-    <AppMain :sectionProducts="products" />
+    <AppMain :shopProducts="foods" :sectionProducts="products" />
     <AppFooter />
 </template>
 

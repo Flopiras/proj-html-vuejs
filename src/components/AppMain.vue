@@ -4,7 +4,7 @@ import SectionShop from './main/SectionShop.vue';
 
 export default {
     components: { SectionMission, SectionShop },
-    props: { sectionProducts: Array }
+    props: { sectionProducts: Array, shopProducts: Array }
 }
 </script>
 
@@ -13,6 +13,6 @@ export default {
         <!-- mission -->
         <SectionMission :products="sectionProducts" />
         <!-- shop -->
-        <SectionShop />
+        <SectionShop :foods="shopProducts" />
     </main>
 </template>
