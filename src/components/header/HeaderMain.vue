@@ -1,16 +1,17 @@
 <script>
 import BaseDropdown from '../BaseDropdown.vue';
 import BaseButton from '../BaseButton.vue';
+import HeaderJumbotron from '../header/HeaderJumbotron.vue';
 
 export default {
-    components: { BaseDropdown, BaseButton },
+    components: { BaseDropdown, BaseButton, HeaderJumbotron },
     props: { options: Array }
 }
 </script>
 
 <template>
     <div id="header-main">
-        <div class="container d-flex align-items-center">
+        <div class="container my-2 d-flex justify-content-between align-items-center">
             <!-- left part -->
             <div class="d-flex align-items-center">
                 <img src="../../assets/img/logo.png" alt="logo">
@@ -34,6 +35,8 @@ export default {
                 <BaseButton :bgClass="'btn-second'" :placeholder="'ORDER NOW'" />
             </div>
         </div>
+        <!-- jumbotron -->
+        <HeaderJumbotron />
     </div>
 </template>
 
