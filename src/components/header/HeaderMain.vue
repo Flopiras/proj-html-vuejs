@@ -31,7 +31,7 @@ export default {
                 </div>
 
                 <!-- button -->
-                <BaseButton :placeholder="'ORDER NOW'" />
+                <BaseButton :bgClass="'btn-second'" :placeholder="'ORDER NOW'" />
             </div>
         </div>
     </div>
