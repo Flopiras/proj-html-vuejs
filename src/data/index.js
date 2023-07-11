@@ -85,4 +85,6 @@ const foods = [
     }
 ]
 
-export{navbarOptions, products, foods};
+const trends = foods.splice(3,4)
+
+export{navbarOptions, products, foods, trends};
