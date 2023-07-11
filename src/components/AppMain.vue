@@ -1,5 +1,13 @@
-<script></script>
+<script>
+import SectionMission from './main/SectionMission.vue';
+
+export default {
+    components: { SectionMission }
+}
+</script>
 
 <template>
-    <main></main>
+    <main>
+        <SectionMission />
+    </main>
 </template>
