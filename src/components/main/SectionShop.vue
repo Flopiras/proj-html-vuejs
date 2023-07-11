@@ -26,8 +26,8 @@ export default {
 
             <!-- foods grid -->
             <div class="row row-cols-4">
-                <div class="col">
-                    <BaseCard />
+                <div v-for="food in foods" :key="food.id" class="col">
+                    <BaseCard :pic="food.pic" :picName="food.name" :mainCaption="food.name" :saleTag="food.discount" />
                 </div>
             </div>
         </div>
@@ -40,7 +40,7 @@ export default {
 .container {
     background-image: url(../../assets/img/shop-bg-img.jpg);
     min-height: 100px;
-    padding: 6rem 0;
+    padding: 150px 200px;
 }
 
 h1,
@@ -51,5 +51,11 @@ h5 {
 .btn-link {
     text-decoration: none;
     color: currentColor;
+}
+
+figure {
+    h3 {
+        font-size: 1rem;
+    }
 }
 </style>
