@@ -13,7 +13,7 @@ export default {
 
 <style lang="scss" scoped>
 .offer-card {
-    padding: 2rem;
+    padding: 1rem;
     height: 100%;
     font-weight: 600;
     color: white;
@@ -25,6 +25,6 @@ export default {
 
 .title {
     width: 70%;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
 }
 </style>
