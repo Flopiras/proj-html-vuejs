@@ -47,7 +47,7 @@ export default {
                     <BaseCard :urlImage="getImagePath(product.pic)" :altImage="product.name" />
                 </div>
                 <div class="col-2">
-                    <BaseCard :urlImage="'../../assets/img/fe1.jpg'" />
+                    <BaseCard :urlImage="getImagePath(products[0].pic)" />
                 </div>
             </div>
         </div>
