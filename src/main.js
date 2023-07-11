@@ -21,11 +21,13 @@ import {
     faLocationDot, 
     faEnvelope, 
     faMagnifyingGlass,
-    faCartShopping 
+    faCartShopping,
+    faQuoteLeft
 } from '@fortawesome/free-solid-svg-icons';
 
 /* add icons to the library */
-library.add(faClock, faLocationDot, faEnvelope, faMagnifyingGlass, faCartShopping, faFacebookF, faTwitter, faInstagram, faPinterestP);
+    faQuoteLeft
+    library.add(faClock, faLocationDot, faEnvelope, faMagnifyingGlass, faCartShopping, faFacebookF, faTwitter, faInstagram, faPinterestP, faQuoteLeft);
 
 createApp(App)
 .component('FontAwesomeIcon', FontAwesomeIcon)

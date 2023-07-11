@@ -2,7 +2,7 @@
     <section class="text-center">
         <div class="container">
             <div class="marks">
-
+                <FontAwesomeIcon icon="fa-quote-left" class="fa-2xl" />
             </div>
         </div>
     </section>
@@ -13,5 +13,10 @@
 
 section {
     margin-top: 8rem;
+}
+
+.marks {
+    font-size: 3rem;
+    color: $main-color;
 }
 </style>
