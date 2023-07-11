@@ -6,6 +6,19 @@
                 <h5 class="second-color">Running week top selling</h5>
                 <h3 class="main-color text-uppercase">top <span class="second-color">trending</span> organic food</h3>
             </div>
+            <div class="section-main">
+                <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col8">
+                        <div class="container-fluid">
+                            <div class="row row-cols-4">
+                                <div class="col"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2"></div>
+                </div>
+            </div>
         </div>
     </section>
 </template>
