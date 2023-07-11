@@ -39,7 +39,7 @@ export default {
                     <img src="../../assets/img/fe-shap1-1.png" alt="All Natural">
                 </div>
             </div>
-            <div class="row">
+            <div class="row my-4">
                 <div class="col-2"></div>
                 <div v-for="product in products" :key="product.id" class="col-2">
                     <div class="card">
@@ -58,6 +58,10 @@ export default {
 
 <style lang="scss" scoped>
 @use '../../assets/sass/vars' as *;
+
+section {
+    margin-bottom: 3rem;
+}
 
 .col-4 {
 
