@@ -9,7 +9,8 @@ export default {
 </script>
 
 <template>
-    <button :class="bgClass" class="btn" type="button">{{ placeholder }}</button>
+    <button :class="bgClass" class="btn" type="button">
+        <span class="text-uppercase">{{ placeholder }}</span></button>
 </template>
 
 <style lang="scss" scoped>
