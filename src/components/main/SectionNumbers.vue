@@ -12,8 +12,14 @@ export default {
             <div class="row">
                 <div class="col-2"></div>
                 <div class="col-8">
-                    <div class="d-flex">
-                        <NumberCard />
+                    <div class="d-flex justify-content-between align-items-center">
+                        <NumberCard :mainText="'29+'" :bottomText="'Years of experienced'" />
+                        <img class="mx-2" src="../../assets/img/counter-shap1.png" alt="">
+                        <NumberCard :mainText="'200+'" :bottomText="'Everyday Online Delivery'" />
+                        <img class="mx-2" src="../../assets/img/counter-shap1.png" alt="">
+                        <NumberCard :mainText="'20K'" :bottomText="'Client Satysfaction'" />
+                        <img class="mx-2" src="../../assets/img/counter-shap1.png" alt="">
+                        <NumberCard :mainText="'30+'" :bottomText="'Award Winning'" />
                     </div>
                 </div>
                 <div class="col-2"></div>
@@ -27,6 +33,6 @@ export default {
 
 .numbers {
     background-image: url(../../assets/img/counter-bg.jpg);
-    padding: 100px 0;
+    padding: 50px 0;
 }
 </style>
