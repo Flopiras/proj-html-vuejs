@@ -47,7 +47,7 @@ export default {
 .container {
     background-image: url(../../assets/img/shop-bg-img.jpg);
     min-height: 100px;
-    padding: 150px 200px;
+    padding: 100px 200px;
 }
 
 h1,
