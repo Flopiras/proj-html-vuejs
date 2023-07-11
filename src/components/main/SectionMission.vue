@@ -21,6 +21,12 @@
                         I have a relationship to hosting culture.
                     </p>
                 </div>
+                <div class="col-2">
+                    <img src="../../assets/img/fe-shap1-1.png" alt="All Natural">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-2"></div>
             </div>
         </div>
     </section>
