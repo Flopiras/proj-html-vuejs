@@ -4,7 +4,7 @@ export default {
         pic: String,
         picName: String,
         mainCaption: String,
-        secondCaption: String,
+        // secondCaption: String,
         saleTag: Boolean
     },
     methods: {
@@ -23,7 +23,7 @@ export default {
             <img :src="getImagePath(pic)" :alt="picName">
             <figcaption v-if="mainCaption">
                 <h3>{{ mainCaption }}</h3>
-                <h6>{{ secondCaption }}</h6>
+                <!-- <h6>{{ secondCaption }}</h6> -->
             </figcaption>
             <div v-if="saleTag" class="sale-tag">
                 <p>SALE!</p>
@@ -38,6 +38,9 @@ export default {
 .base-card {
     h3 {
         color: currentColor;
+        font-size: 1.2rem;
+        font-weight: 600;
+        padding: 1rem 0 0 0;
     }
 }
 
@@ -45,7 +48,7 @@ figure {
     position: relative;
 
     img {
-        display: block;
+        display: inline-block;
         width: 100%;
     }
 
