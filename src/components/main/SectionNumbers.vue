@@ -8,4 +8,8 @@
 
 <style lang="scss" scoped>
 @use '../../assets/sass/vars' as *;
+
+.numbers {
+    background-image: url(../../assets/img/counter-bg.jpg);
+}
 </style>
