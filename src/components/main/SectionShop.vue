@@ -28,8 +28,15 @@ export default {
             <div class="row row-cols-4">
                 <div v-for="food in foods" :key="food.id" class="col">
                     <BaseCard :pic="food.pic" :picName="food.name" :mainCaption="food.name" :saleTag="food.discount" />
+                    <div class="price mb-3">
+                        <div class="opacity-50">
+                            <p class="second-color pe-2">{{ food.price }}</p>
+                        </div>
+                        <p>{{ food.lastPrice }}</p>
+                    </div>
                 </div>
             </div>
+
         </div>
     </section>
 </template>
@@ -53,9 +60,10 @@ h5 {
     color: currentColor;
 }
 
-figure {
-    h3 {
-        font-size: 1rem;
-    }
+.price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
 }
 </style>
