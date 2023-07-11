@@ -1,11 +1,18 @@
 <script>
 export default {
     props: {
-        urlImage: String,
-        altImage: String,
+        pic: String,
+        picName: String,
         mainCaption: String,
         secondCaption: String,
         saleTag: Boolean
+    },
+    methods: {
+        getImagePath(pic) {
+            const url = new URL(`../assets/img/${pic}`, import.meta.url)
+
+            return url.href;
+        }
     }
 }
 </script>
@@ -13,7 +20,7 @@ export default {
 <template>
     <div class="base-card">
         <figure>
-            <img :src="urlImage" :alt="mainCaption">
+            <img :src="getImagePath(pic)" :alt="picName">
             <figcaption v-if="mainCaption">
                 <h3>{{ mainCaption }}</h3>
                 <h6>{{ secondCaption }}</h6>
