@@ -1,3 +1,13 @@
+<script>
+import BaseCard from '../BaseCard.vue';
+export default {
+    props: {
+        trends: Array
+    },
+    components: { BaseCard }
+}
+</script>
+
 <template>
     <section>
 
@@ -12,7 +22,10 @@
                     <div class="col8">
                         <div class="container-fluid">
                             <div class="row row-cols-4">
-                                <div class="col"></div>
+                                <div v-for="trend in trends" :key="trend.id" class="col">
+                                    <BaseCard :pic="trend.pic" :picName="trend.name" :mainCaption="trend.name"
+                                        :saleTag="trend.discount" />
+                                </div>
                             </div>
                         </div>
                     </div>
