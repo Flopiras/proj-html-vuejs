@@ -18,4 +18,63 @@ const products = [
     }
 ]
 
-export{navbarOptions, products};
+const foods = [
+    {
+        'id': 1,
+        'name': 'Fress Apple',
+        'pic': 's5-150x150.jpg',
+        'price': null,
+        'lastPrice': '$18'
+    },
+    {
+        'id': 2,
+        'name': 'Fress Cobie',
+        'pic': 's2-150x150.jpg',
+        'price': '$18',
+        'lastPrice': '$17'
+    },
+    {
+        'id': 3,
+        'name': 'Fresh Watermelon',
+        'pic': 's8-150x150.jpg',
+        'price': null,
+        'lastPrice': '$15'
+    },
+    {
+        'id': 4,
+        'name': 'Organic Juice',
+        'pic': 's1-150x150.jpg',
+        'price': '$20',
+        'lastPrice': '$15'
+    },
+    {
+        'id': 5,
+        'name': 'Fress Blueberries',
+        'pic': 's4-150x150.jpg',
+        'price': '$19',
+        'lastPrice': '$14'
+    },
+    {
+        'id': 6,
+        'name': 'Organic Letus',
+        'pic': 's10-150x150.jpg',
+        'price': null,
+        'lastPrice': '$23'
+    },
+    {
+        'id': 7,
+        'name': 'Red Gajor',
+        'pic': 's9-150x150.jpg',
+        'price': '$29',
+        'lastPrice': '$26'
+    },
+    {
+        'id': 8,
+        'name': 'Naga Pepper',
+        'pic': 's7-150x150.jpg',
+        'price': null,
+        'lastPrice': '$21'
+    }
+]
+
+export{navbarOptions, products, foods};
