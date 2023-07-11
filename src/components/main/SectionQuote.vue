@@ -23,7 +23,7 @@
 @use '../../assets/sass/vars' as *;
 
 section {
-    margin-top: 8rem;
+    margin: 8rem 0;
 }
 
 .marks {
