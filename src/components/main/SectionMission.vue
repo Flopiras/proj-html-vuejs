@@ -4,9 +4,9 @@ export default {
     props: { products: Array },
     methods: {
         getImagePath(pic) {
-            const url = new URL(`../assets/img/${pic}`, import.meta.url)
+            const url = new URL(`../../assets/img/${pic}`, import.meta.url)
 
-            return url.href
+            return url.href;
         }
     }
 }
@@ -43,7 +43,12 @@ export default {
                 <div class="col-2"></div>
                 <div v-for="product in products" :key="product.id" class="col-2">
                     <div class="card">
-                        <img :src="getImagePath(product.pic)" alt="">
+                        <img :src="getImagePath(product.pic)" :alt="product.name">
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="card">
+                        <img src="../../assets/img/fe1.jpg" alt="">
                     </div>
                 </div>
             </div>
@@ -72,5 +77,9 @@ export default {
 
 .second-color {
     color: $second-main-color;
+}
+
+.card {
+    min-height: 80px;
 }
 </style>
