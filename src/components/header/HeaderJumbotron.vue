@@ -12,7 +12,7 @@ export default {
 
             <div class="jumbo-content text-center">
                 <h5>GOGRIN ORGANIC FOOD STORE</h5>
-                <H1>Eating naturally & orgainc is always be healty.</H1>
+                <h1>Eating naturally & orgainc is always be healty.</h1>
 
                 <!-- buttons -->
                 <BaseButton :placeholder="'ABOUT US'" :bgClass="'btn-second'" />
@@ -29,7 +29,7 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
 }
 
 .jumbo-content {
