@@ -1,6 +1,8 @@
 <script>
+import BaseCard from '../BaseCard.vue';
 
 export default {
+    components: { BaseCard },
     props: { products: Array },
     methods: {
         getImagePath(pic) {
@@ -42,14 +44,10 @@ export default {
             <div class="row my-4">
                 <div class="col-2"></div>
                 <div v-for="product in products" :key="product.id" class="col-2">
-                    <div class="card">
-                        <img :src="getImagePath(product.pic)" :alt="product.name">
-                    </div>
+                    <BaseCard :urlImage="getImagePath(product.pic)" :altImage="product.name" />
                 </div>
                 <div class="col-2">
-                    <div class="card">
-                        <img src="../../assets/img/fe1.jpg" alt="">
-                    </div>
+                    <BaseCard :urlImage="'../../assets/img/fe1.jpg'" />
                 </div>
             </div>
         </div>
