@@ -2,12 +2,13 @@
 import SectionMission from './main/SectionMission.vue';
 
 export default {
-    components: { SectionMission }
+    components: { SectionMission },
+    props: { sectionProducts: Array }
 }
 </script>
 
 <template>
     <main>
-        <SectionMission />
+        <SectionMission :products="sectionProducts" />
     </main>
 </template>

@@ -1,3 +1,17 @@
+<script>
+
+export default {
+    props: { products: Array },
+    methods: {
+        getImagePath(pic) {
+            const url = new URL(`../assets/img/${pic}`, import.meta.url)
+
+            return url.href
+        }
+    }
+}
+</script>
+
 <template>
     <section id="mission">
         <div class="container">
@@ -27,6 +41,11 @@
             </div>
             <div class="row">
                 <div class="col-2"></div>
+                <div v-for="product in products" :key="product.id" class="col-2">
+                    <div class="card">
+                        <img :src="getImagePath(product.pic)" alt="">
+                    </div>
+                </div>
             </div>
         </div>
     </section>
