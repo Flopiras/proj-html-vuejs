@@ -11,6 +11,10 @@
                     consultancy. We have proved our competence and had mani satisfied clients.
                 </p>
             </div>
+            <div class="signature">
+                <h4>Marta Alex</h4>
+                <h6 class="second-color">Manager</h6>
+            </div>
         </div>
     </section>
 </template>
@@ -27,10 +31,19 @@ section {
     color: $main-color;
 }
 
+.signature {
+
+    h4,
+    h6 {
+        font-weight: 600;
+
+    }
+}
+
 .quote {
+    font-weight: 600;
     width: 60%;
     margin: 1rem auto;
-    font-weight: 600;
     font-size: 1.2rem;
 
 }
