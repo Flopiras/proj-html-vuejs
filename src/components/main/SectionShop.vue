@@ -1,8 +1,9 @@
 <script>
 import BaseCard from '../BaseCard.vue';
+import BaseButton from '../BaseButton.vue';
 
 export default {
-    components: { BaseCard },
+    components: { BaseCard, BaseButton },
     props: {
         foods: Array
     }
@@ -25,18 +26,22 @@ export default {
             </ul>
 
             <!-- foods grid -->
-            <div class="row row-cols-4">
-                <div v-for="food in foods" :key="food.id" class="col">
-                    <BaseCard :pic="food.pic" :picName="food.name" :mainCaption="food.name" :saleTag="food.discount" />
-                    <div class="price mb-3">
-                        <div class="opacity-50">
-                            <p class="second-color pe-2">{{ food.price }}</p>
+            <div class="grid">
+                <div class="row row-cols-4">
+                    <div v-for="food in foods" :key="food.id" class="col">
+                        <BaseCard :pic="food.pic" :picName="food.name" :mainCaption="food.name" :saleTag="food.discount" />
+                        <div class="price mb-3">
+                            <div class="opacity-50">
+                                <p class="second-color pe-2">{{ food.price }}</p>
+                            </div>
+                            <p>{{ food.lastPrice }}</p>
                         </div>
-                        <p>{{ food.lastPrice }}</p>
                     </div>
                 </div>
             </div>
 
+            <!-- button -->
+            <BaseButton :placeholder="'all products'" :bgClass="'btn-second'" />
         </div>
     </section>
 </template>
@@ -58,6 +63,10 @@ h5 {
 .btn-link {
     text-decoration: none;
     color: currentColor;
+}
+
+.grid {
+    margin: 2rem 0;
 }
 
 .price {
