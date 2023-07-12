@@ -1,12 +1,30 @@
+<script>
+export default {
+    props: { news: Array }
+}
+</script>
+
 <template>
     <section>
         <div class="container">
-
+            <!-- title -->
             <div class="section-title">
                 <h5 class="second-color">The news what we have</h5>
                 <h3 class="main-color text-uppercase">gogrin latest <span class="second-color">news</span> feed</h3>
             </div>
-
+            <!--grid  -->
+            <div class="grid container-fluid">
+                <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-8">
+                        <!-- news cards -->
+                        <div class="news cards row">
+                            <div class="col"></div>
+                        </div>
+                    </div>
+                    <div class="col-2"></div>
+                </div>
+            </div>
         </div>
     </section>
 </template>

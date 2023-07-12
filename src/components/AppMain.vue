@@ -9,7 +9,7 @@ import SectionApoinment from './main/SectionApoinment.vue';
 import SectionNews from './main/SectionNews.vue';
 export default {
     components: { SectionMission, SectionShop, SectionQuote, SectionOffers, SectionNumbers, SectionTrending, SectionApoinment, SectionNews },
-    props: { sectionProducts: Array, shopProducts: Array, trendItems: Array }
+    props: { news: Array, sectionProducts: Array, shopProducts: Array, trendItems: Array }
 }
 </script>
 
@@ -30,6 +30,6 @@ export default {
         <!-- apoinment -->
         <SectionApoinment />
         <!-- news -->
-        <SectionNews />
+        <SectionNews :news="news" />
     </main>
 </template>
