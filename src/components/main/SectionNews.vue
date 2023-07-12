@@ -1,8 +1,12 @@
 <template>
     <section>
-        <div class="section-title">
-            <h5 class="second-color">The news what we have</h5>
-            <h3 class="main-color text-uppercase">gogrin latest <span class="second-color">news</span> feed</h3>
+        <div class="container">
+
+            <div class="section-title">
+                <h5 class="second-color">The news what we have</h5>
+                <h3 class="main-color text-uppercase">gogrin latest <span class="second-color">news</span> feed</h3>
+            </div>
+
         </div>
     </section>
 </template>
