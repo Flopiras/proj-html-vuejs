@@ -51,7 +51,7 @@ export default {
                 <div class="col">
                     <h5 class="fw-bold">Emergency link</h5>
                     <ul>
-                        <li></li>
+                        <li v-for="link in emergencyLinks" :key="link" class="py-2">{{ link }}</li>
                     </ul>
                 </div>
                 <!-- blog -->
