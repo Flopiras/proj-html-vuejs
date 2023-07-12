@@ -1,3 +1,12 @@
+<script>
+export default {
+    props: {
+        text: String,
+        title: String
+    }
+}
+</script>
+
 <template>
     <section>
         <h5 class="second-color">Running week top selling</h5>
