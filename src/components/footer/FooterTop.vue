@@ -3,7 +3,8 @@ import BaseFormSubscribe from '../BaseFormSubscribe.vue';
 import BaseCard from '../BaseCard.vue';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 export default {
-    components: { BaseFormSubscribe, BaseCard, FontAwesomeIcon }
+    components: { BaseFormSubscribe, BaseCard, FontAwesomeIcon },
+    props: { emergencyLinks: Array }
 }
 </script>
 
@@ -47,7 +48,12 @@ export default {
                     </ul>
                 </div>
                 <!-- emergency links -->
-                <div class="col"></div>
+                <div class="col">
+                    <h5 class="fw-bold">Emergency link</h5>
+                    <ul>
+                        <li></li>
+                    </ul>
+                </div>
                 <!-- blog -->
                 <div class="col"></div>
                 <!-- gallery -->

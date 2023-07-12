@@ -2,12 +2,13 @@
 
 import FooterTop from './footer/FooterTop.vue';
 export default {
-    components: { FooterTop }
+    components: { FooterTop },
+    props: { emergencyLinks: Array }
 }
 </script>
 
 <template>
     <footer>
-        <FooterTop />
+        <FooterTop :emergencyLinks="emergencyLinks" />
     </footer>
 </template>
