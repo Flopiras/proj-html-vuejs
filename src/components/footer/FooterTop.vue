@@ -55,11 +55,24 @@ export default {
                     </ul>
                 </div>
                 <!-- blog -->
-                <div class="col">
+                <div class="col ">
                     <h5 class="fw-bold">Our Latest Blog</h5>
 
-                    <ul>
-                        <li></li>
+                    <ul class="blog">
+                        <li class="d-flex">
+                            <BaseCard :pic="news[0].littlePic" />
+                            <div>
+                                <p>{{ news[0].text }}</p>
+                                <p>{{ news[0].date }}</p>
+                            </div>
+                        </li>
+                        <li class="d-flex">
+                            <BaseCard :pic="news[1].littlePic" />
+                            <div>
+                                <p>{{ news[1].text }}</p>
+                                <p>{{ news[1].date }}</p>
+                            </div>
+                        </li>
                     </ul>
 
                 </div>
