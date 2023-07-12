@@ -1,5 +1,5 @@
 <script>
-import { navbarOptions, products, foods, trends, news } from './data';
+import { navbarOptions, products, foods, trends, news, partners } from './data';
 
 import AppHeader from './components/AppHeader.vue';
 import AppMain from './components/AppMain.vue';
@@ -13,7 +13,8 @@ export default {
             products,
             foods,
             trends,
-            news
+            news,
+            partners
         }
     }
 }
@@ -22,7 +23,7 @@ export default {
 
 <template>
     <AppHeader :options="navbarOptions" />
-    <AppMain :news="news" :trendItems="trends" :shopProducts="foods" :sectionProducts="products" />
+    <AppMain :partners="partners" :news="news" :trendItems="trends" :shopProducts="foods" :sectionProducts="products" />
     <AppFooter />
 </template>
 
