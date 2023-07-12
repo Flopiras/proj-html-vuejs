@@ -1,10 +1,10 @@
 <script>
-import BaseCard from '../BaseCard.vue';
+import ShopCard from './ShopCard.vue';
 export default {
     props: {
         trends: Array
     },
-    components: { BaseCard }
+    components: { ShopCard }
 }
 </script>
 
@@ -12,19 +12,24 @@ export default {
     <section>
 
         <div class="container">
+            <!-- section header -->
             <div class="section-header">
                 <h5 class="second-color">Running week top selling</h5>
                 <h3 class="main-color text-uppercase">top <span class="second-color">trending</span> organic food</h3>
             </div>
+            <!-- section main -->
             <div class="section-main">
                 <div class="row">
                     <div class="col-2"></div>
-                    <div class="col8">
+                    <div class="col-8">
                         <div class="container-fluid">
+                            <!-- cards -->
                             <div class="row row-cols-4">
-                                <div v-for="trend in trends" :key="trend.id" class="trend col">
-                                    <BaseCard :pic="trend.pic" :picName="trend.name" :mainCaption="trend.name"
-                                        :saleTag="trend.discount" />
+                                <div v-for="trend in trends" :key="trend.id" class="col">
+                                    <div class="trend">
+
+                                        <ShopCard :item="trend" />
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -56,5 +61,6 @@ section {
         font-size: 2.3rem;
         font-weight: 600;
     }
+
 }
 </style>
