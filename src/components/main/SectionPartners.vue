@@ -25,3 +25,10 @@ export default {
         </div>
     </section>
 </template>
+
+<style lang="scss" scoped>
+section {
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+}
+</style>
