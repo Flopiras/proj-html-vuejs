@@ -10,7 +10,9 @@ export default {
 <template>
     <div class="my-2">
         <!-- pic -->
-        <BaseCard :pic="item.pic" />
+        <div class="pic">
+            <BaseCard :pic="item.pic" />
+        </div>
         <!-- caption -->
         <div class="caption d-flex">
             <div class="author">
@@ -32,6 +34,10 @@ export default {
 </template>
 
 <style scoped>
+.pic:hover {
+    opacity: 0.5;
+}
+
 span,
 p {
     font-size: 0.9rem;
