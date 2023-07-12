@@ -34,6 +34,10 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+section {
+    margin-top: 4rem;
+}
+
 .section-title {
     text-align: center;
     padding-top: 3rem;
