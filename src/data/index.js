@@ -99,12 +99,14 @@ const news = [
     {
         'id': 1,
         'pic' : 'blo1-390x250.jpg',
+        'littlePic' : 'blo1-70x70.jpg',
         'date': '17 Dec 2022',
         'text': 'Where I live, I am surrounded by fresh, organic food, so I eat really well.'
     },
     {
         'id': 2,
         'pic' : 'blo2-390x250.jpg',
+        'littlePic' : 'blo2-70x70.jpg',
         'date': '16 Dec 2022',
         'text': 'What we get at home is 100% organic food. We are also 90% vegetarian.'
     },
