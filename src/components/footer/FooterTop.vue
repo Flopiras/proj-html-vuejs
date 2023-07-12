@@ -17,12 +17,13 @@ export default {
 section {
     background-image: url(../../assets/img/footer-bg.jpg);
     padding-bottom: 6rem;
+    padding-top: 6rem;
     position: relative;
 
     #base-form {
         width: calc(100% / 12 * 8);
         position: absolute;
-        top: -70%;
+        top: -45%;
         right: 17%;
     }
 }
