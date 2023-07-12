@@ -4,7 +4,7 @@ import BaseCard from '../BaseCard.vue';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 export default {
     components: { BaseFormSubscribe, BaseCard, FontAwesomeIcon },
-    props: { emergencyLinks: Array }
+    props: { emergencyLinks: Array, news: Array }
 }
 </script>
 
@@ -55,7 +55,14 @@ export default {
                     </ul>
                 </div>
                 <!-- blog -->
-                <div class="col"></div>
+                <div class="col">
+                    <h5 class="fw-bold">Our Latest Blog</h5>
+
+                    <ul>
+                        <li></li>
+                    </ul>
+
+                </div>
                 <!-- gallery -->
                 <div class="col"></div>
                 <div class="col-2"></div>
