@@ -1,5 +1,7 @@
 <script>
+import NewsCard from './NewsCard.vue';
 export default {
+    components: { NewsCard },
     props: { news: Array }
 }
 </script>
@@ -18,8 +20,10 @@ export default {
                     <div class="col-2"></div>
                     <div class="col-8">
                         <!-- news cards -->
-                        <div class="news cards row">
-                            <div class="col"></div>
+                        <div class="news-cards row">
+                            <div v-for="item in news" :key="item.id" class="col">
+                                <NewsCard />
+                            </div>
                         </div>
                     </div>
                     <div class="col-2"></div>
