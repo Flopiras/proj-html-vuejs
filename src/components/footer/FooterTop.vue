@@ -1,12 +1,15 @@
 <script>
+import BaseFormSubscribe from '../BaseFormSubscribe.vue';
 export default {
-    components: {}
+    components: { BaseFormSubscribe }
 }
 </script>
 
 <template>
     <section>
-
+        <div class="container">
+            <BaseFormSubscribe />
+        </div>
     </section>
 </template>
 
