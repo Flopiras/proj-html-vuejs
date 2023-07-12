@@ -28,5 +28,7 @@ export default {
         <SectionTrending :trends="trendItems" />
         <!-- apoinment -->
         <SectionApoinment />
+        <!-- news -->
+        <SectionNewsVue />
     </main>
 </template>
