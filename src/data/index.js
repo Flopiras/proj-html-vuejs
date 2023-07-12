@@ -116,4 +116,32 @@ const news = [
     },
 ]
 
-export{navbarOptions, products, foods, trends, news};
+const partners = [
+    {
+        id: 1,
+        pic: 'brand1.png',
+        type:'farm'
+    },
+    {
+        id: 2,
+        pic: 'brand2.png',
+        type:'farm'
+    },
+    {
+        id: 3,
+        pic: 'brand3.png',
+        type:'farm'
+    },
+    {
+        id: 4,
+        pic: 'brand4.png',
+        type:'farm'
+    },
+    {
+        id: 5,
+        pic: 'brand1-100x100.png',
+        type:'farm'
+    },
+]
+
+export{navbarOptions, products, foods, trends, news, partners};
