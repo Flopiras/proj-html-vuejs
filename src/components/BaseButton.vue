@@ -29,6 +29,7 @@ button {
     background-color: $main-color;
 
     &:hover {
+        transition: background-color 1s ease 0s;
         background-color: $second-main-color;
     }
 }
@@ -38,7 +39,7 @@ button {
 
     &:hover {
         background-color: $main-color;
-        transition: background-color 2s ease 1s;
+        transition: background-color 1s ease 0s;
     }
 }
 </style>
