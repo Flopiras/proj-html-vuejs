@@ -4,13 +4,12 @@ export default {
     props: {
         placeholder: String,
         bgClass: String,
-        borderClass: String
-    }
+    },
 }
 </script>
 
 <template>
-    <button :class="[borderClass, bgClass]" class="btn rounded" type="button">
+    <button :class="bgClass" class="btn " type="button">
         <span class="text-uppercase">{{ placeholder }}</span></button>
 </template>
 
@@ -21,19 +20,25 @@ button {
     margin: 0 1rem;
     color: white;
     padding: 1rem 3.5rem;
-
-}
-
-.border-leaf {
     border-radius: 0 20px 0 20px;
 
 }
 
+
 .btn-main {
     background-color: $main-color;
+
+    &:hover {
+        background-color: $second-main-color;
+    }
 }
 
 .btn-second {
     background-color: $second-main-color;
+
+    &:hover {
+        background-color: $main-color;
+        transition: background-color 2s ease 1s;
+    }
 }
 </style>
