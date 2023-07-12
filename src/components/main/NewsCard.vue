@@ -18,7 +18,7 @@ export default {
                 <span class="mx-1">Gogrin</span>
             </div>
             <div class="date">
-                <FontAwesomeIcon icon="fa-clock" class="fa-regular fa-clock second-color" />
+                <FontAwesomeIcon icon="fa-regular fa-clock" class=" second-color ms-1" />
                 <span class="mx-1">{{ item.date }}</span>
             </div>
         </div>
