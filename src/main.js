@@ -22,12 +22,13 @@ import {
     faEnvelope, 
     faMagnifyingGlass,
     faCartShopping,
-    faQuoteLeft
+    faQuoteLeft,
+    faUser
 } from '@fortawesome/free-solid-svg-icons';
 
 /* add icons to the library */
     faQuoteLeft
-    library.add(faClock, faLocationDot, faEnvelope, faMagnifyingGlass, faCartShopping, faFacebookF, faTwitter, faInstagram, faPinterestP, faQuoteLeft);
+    library.add(faClock, faLocationDot, faEnvelope, faMagnifyingGlass, faCartShopping, faFacebookF, faTwitter, faInstagram, faPinterestP, faQuoteLeft, faUser);
 
 createApp(App)
 .component('FontAwesomeIcon', FontAwesomeIcon)
