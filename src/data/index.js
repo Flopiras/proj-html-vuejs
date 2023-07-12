@@ -95,4 +95,25 @@ const foods = [
 
 const trends = foods.filter(food => { return food.trend })
 
-export{navbarOptions, products, foods, trends};
+const news = [
+    {
+        'id': 1,
+        'pic' : 'blo1-390x250.jpg',
+        'date': '17 Dec 2022',
+        'text': 'Where I live, I am surrounded by fresh, organic food, so I eat really well.'
+    },
+    {
+        'id': 2,
+        'pic' : 'blo2-390x250.jpg',
+        'date': '16 Dec 2022',
+        'text': 'What we get at home is 100% organic food. We are also 90% vegetarian.'
+    },
+    {
+        'id': 3,
+        'pic' : 'blo3-390x250.jpg',
+        'date': '15 Dec 2022',
+        'text': 'If we as a society are willing to have a preference for organic food farmer'
+    },
+]
+
+export{navbarOptions, products, foods, trends, news};
