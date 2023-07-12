@@ -1,7 +1,8 @@
 <script>
 import BaseCard from '../BaseCard.vue';
 export default {
-    components: { BaseCard }
+    components: { BaseCard },
+    props: { partners: Array }
 }
 </script>
 
@@ -13,7 +14,9 @@ export default {
                 <div class="col-8">
                     <div class="grid container-fluid">
                         <div class="row row-cols-5">
-                            <div class="col"></div>
+                            <div v-for="partner in partners" :key="partner.id" class="col">
+                                <BaseCard :pic="partner.pic" />
+                            </div>
                         </div>
                     </div>
                 </div>
