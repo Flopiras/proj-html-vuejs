@@ -5,8 +5,9 @@ import SectionQuote from './main/SectionQuote.vue';
 import SectionNumbers from './main/SectionNumbers.vue';
 import SectionOffers from './main/SectionOffers.vue';
 import SectionTrending from './main/SectionTrending.vue';
+import SectionApoinment from './main/SectionApoinment.vue';
 export default {
-    components: { SectionMission, SectionShop, SectionQuote, SectionOffers, SectionNumbers, SectionTrending },
+    components: { SectionMission, SectionShop, SectionQuote, SectionOffers, SectionNumbers, SectionTrending, SectionApoinment },
     props: { sectionProducts: Array, shopProducts: Array, trendItems: Array }
 }
 </script>
@@ -25,5 +26,7 @@ export default {
         <SectionNumbers />
         <!-- trending -->
         <SectionTrending :trends="trendItems" />
+        <!-- apoinment -->
+        <SectionApoinment />
     </main>
 </template>
