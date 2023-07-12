@@ -1,11 +1,10 @@
 <script>
 import ShopCard from './ShopCard.vue';
-import SectionTitle from './SectionTitle.vue';
 export default {
     props: {
         trends: Array
     },
-    components: { ShopCard, SectionTitle }
+    components: { ShopCard }
 }
 </script>
 
@@ -14,7 +13,10 @@ export default {
 
         <div class="container">
             <!-- section title -->
-            <SectionTitle />
+            <div class="section-title">
+                <h5 class="second-color">Running week top selling</h5>
+                <h3 class="main-color text-uppercase">top <span class="second-color">trending</span> organic food</h3>
+            </div>
             <!-- section main -->
             <div class="section-main">
                 <div class="row">
@@ -42,5 +44,23 @@ export default {
 <style lang="scss" scoped>
 section {
     margin: 3rem 0;
+}
+
+.section-title {
+    text-align: center;
+    padding-top: 3rem;
+    background-image: url(../../assets/img/title-shap.png);
+    background-repeat: no-repeat;
+    background-position: 50%;
+
+    h5 {
+        font-weight: 600;
+    }
+
+    h3 {
+        font-size: 2.3rem;
+        font-weight: 600;
+    }
+
 }
 </style>
