@@ -8,7 +8,7 @@ export default {
 <template>
     <div id="base-form">
         <div class="container d-flex justify-content-between align-items-center">
-            <h2 class="fw-bold text-uppercase">subscribe our newsletter</h2>
+            <h3 class="fw-bold text-uppercase">subscribe our newsletter</h3>
             <!-- input  -->
             <div class="input-group w-50 mb-3">
                 <input type="text" class="form-control" placeholder="your email">
