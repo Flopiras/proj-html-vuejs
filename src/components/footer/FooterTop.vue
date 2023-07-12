@@ -8,7 +8,17 @@ export default {
 <template>
     <section>
         <div class="container">
+            <!-- form -->
             <BaseFormSubscribe />
+            <!-- links -->
+            <div class="row">
+                <div class="col-2"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col-2"></div>
+            </div>
         </div>
     </section>
 </template>
@@ -17,7 +27,7 @@ export default {
 section {
     background-image: url(../../assets/img/footer-bg.jpg);
     padding-bottom: 6rem;
-    padding-top: 6rem;
+    padding-top: 10rem;
     position: relative;
 
     #base-form {
