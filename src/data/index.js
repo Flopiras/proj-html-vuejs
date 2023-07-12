@@ -93,6 +93,6 @@ const foods = [
     }
 ]
 
-const trends = foods.map(trend => {return (trend ? true : false)})
+const trends = foods.filter(food => { return food.trend })
 
 export{navbarOptions, products, foods, trends};
