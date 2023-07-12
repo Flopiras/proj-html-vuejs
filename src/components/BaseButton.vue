@@ -3,13 +3,14 @@ export default {
 
     props: {
         placeholder: String,
-        bgClass: String
+        bgClass: String,
+        borderClass: String
     }
 }
 </script>
 
 <template>
-    <button :class="bgClass" class="btn" type="button">
+    <button :class="[borderClass, bgClass]" class="btn rounded" type="button">
         <span class="text-uppercase">{{ placeholder }}</span></button>
 </template>
 
@@ -18,9 +19,14 @@ export default {
 
 button {
     margin: 0 1rem;
-    border-radius: 0 20px 0 20px;
     color: white;
     padding: 1rem 3.5rem;
+
+}
+
+.border-leaf {
+    border-radius: 0 20px 0 20px;
+
 }
 
 .btn-main {

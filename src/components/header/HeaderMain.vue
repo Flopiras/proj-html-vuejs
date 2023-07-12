@@ -32,7 +32,7 @@ export default {
                 </div>
 
                 <!-- button -->
-                <BaseButton :bgClass="'btn-second'" :placeholder="'ORDER NOW'" />
+                <BaseButton :border="'border-leaf'" :bgClass="'btn-second'" :placeholder="'ORDER NOW'" />
             </div>
         </div>
         <!-- jumbotron -->
