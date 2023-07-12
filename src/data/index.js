@@ -139,7 +139,7 @@ const partners = [
     },
     {
         id: 5,
-        pic: 'brand1-100x100.png',
+        pic: 'brand1.png',
         type:'farm'
     },
 ]
