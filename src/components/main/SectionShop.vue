@@ -1,9 +1,8 @@
 <script>
-import BaseCard from '../BaseCard.vue';
 import BaseButton from '../BaseButton.vue';
-
+import ShopCard from './ShopCard.vue';
 export default {
-    components: { BaseCard, BaseButton },
+    components: { BaseButton, ShopCard },
     props: {
         foods: Array
     }
@@ -29,13 +28,7 @@ export default {
             <div class="grid">
                 <div class="row row-cols-4">
                     <div v-for="food in foods" :key="food.id" class="col">
-                        <BaseCard :pic="food.pic" :picName="food.name" :mainCaption="food.name" :saleTag="food.discount" />
-                        <div class="price mb-3">
-                            <div class="opacity-50">
-                                <p class="second-color pe-2">{{ food.price }}</p>
-                            </div>
-                            <p>{{ food.lastPrice }}</p>
-                        </div>
+                        <ShopCard :item="food" />
                     </div>
                 </div>
             </div>
@@ -67,12 +60,5 @@ h5 {
 
 .grid {
     margin: 2rem 0;
-}
-
-.price {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: 600;
 }
 </style>
