@@ -22,7 +22,7 @@ export default {
                         <!-- news cards -->
                         <div class="news-cards row">
                             <div v-for="item in news" :key="item.id" class="col">
-                                <NewsCard :new="item" />
+                                <NewsCard :item="item" />
                             </div>
                         </div>
                     </div>
