@@ -4,7 +4,7 @@ import BaseCard from '../BaseCard.vue';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 export default {
     components: { BaseFormSubscribe, BaseCard, FontAwesomeIcon },
-    props: { emergencyLinks: Array, news: Array }
+    props: { gallery: Array, emergencyLinks: Array, news: Array }
 }
 </script>
 
@@ -77,7 +77,18 @@ export default {
 
                 </div>
                 <!-- gallery -->
-                <div class="col"></div>
+                <div class="col">
+                    <h5 class="fw-bold">Our Gallery</h5>
+
+                    <div class="container-fluid">
+                        <div class="row row-cols-3">
+                            <div v-for="pic in gallery" :key="pic.id" class="col d-flex flex-wrap">
+                                <BaseCard :pic="pic.pic" />
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
                 <div class="col-2"></div>
             </div>
         </div>

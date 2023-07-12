@@ -25,7 +25,7 @@ export default {
 <template>
     <AppHeader :options="navbarOptions" />
     <AppMain :partners="partners" :news="news" :trendItems="trends" :shopProducts="foods" :sectionProducts="products" />
-    <AppFooter :emergencyLinks="emergencyLinks" :news="news" />
+    <AppFooter :gallery="foods" :emergencyLinks="emergencyLinks" :news="news" />
 </template>
 
 <style lang="scss">
