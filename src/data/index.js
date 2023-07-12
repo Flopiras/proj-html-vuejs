@@ -144,4 +144,6 @@ const partners = [
     },
 ]
 
-export{navbarOptions, products, foods, trends, news, partners};
+const emergencyLinks = ['Organic Food Shop', 'Our Term & Condition', 'Gogrin Faq Section', 'Out Team Member', 'Our Latest News Feed']
+
+export{navbarOptions, products, foods, trends, news, partners, emergencyLinks};
