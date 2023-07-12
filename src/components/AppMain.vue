@@ -7,8 +7,9 @@ import SectionOffers from './main/SectionOffers.vue';
 import SectionTrending from './main/SectionTrending.vue';
 import SectionApoinment from './main/SectionApoinment.vue';
 import SectionNews from './main/SectionNews.vue';
+import SectionPartners from './main/SectionPartners.vue';
 export default {
-    components: { SectionMission, SectionShop, SectionQuote, SectionOffers, SectionNumbers, SectionTrending, SectionApoinment, SectionNews },
+    components: { SectionMission, SectionShop, SectionQuote, SectionOffers, SectionNumbers, SectionTrending, SectionApoinment, SectionNews, SectionPartners },
     props: { news: Array, sectionProducts: Array, shopProducts: Array, trendItems: Array }
 }
 </script>
@@ -31,5 +32,7 @@ export default {
         <SectionApoinment />
         <!-- news -->
         <SectionNews :news="news" />
+        <!-- partners -->
+        <SectionPartners />
     </main>
 </template>
