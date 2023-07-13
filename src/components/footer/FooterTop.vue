@@ -122,6 +122,7 @@ section {
 }
 
 .icon {
+    cursor: pointer;
     margin-right: 1rem;
     display: flex;
     justify-content: center;
